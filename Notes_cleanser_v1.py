@@ -2,7 +2,7 @@ import pandas as pd
 
 # Parameters
 fileName = "Analysis_Latest_Test"
-sheetName = "Sheet2"
+sheetName = "Sheet1"
 colName = "Note"
 
 # Read in excel file and first/last name databases
@@ -16,7 +16,7 @@ for idx,row in df.iterrows():
     for i in range(len(tokens)):
         if tokens[i].lower().capitalize() in firstNames.values:
             tokens[i] = "Joe"
-        elif tokens[i] in lastNames.values:
+        elif tokens[i].lower().capitalize() in lastNames.values:
             tokens[i] = "Bloggs"
     df.at[idx,colName] = " ".join(tokens)
     print(str(idx + 1) + " completed.")
