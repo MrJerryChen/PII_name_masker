@@ -1,0 +1,38 @@
+---------------------------------------------------
+Script Contents
+---------------------------------------------------
+Notes_cleanser_v1.py
+FirstNameDatabase.csv
+LastNameDatabase.csv
+
+
+---------------------------------------------------
+Version
+---------------------------------------------------
+16/07/19 v1 Jerry Chen (jche318@gmail.com) Initial version
+
+
+---------------------------------------------------
+Description
+---------------------------------------------------
+Script expects an excel file "Analysis_Latest_Test.xlsx" in same directory and a column named "Note" which holds the notes in Sheet1. 
+It outputs a "output.csv" file with a flattened version of the excel with matched first name, last names replaced with Joe, Bloggs 
+respectively in the Note column.
+
+
+---------------------------------------------------
+Instructions for Windows
+---------------------------------------------------
+1. Unzip to folder
+2. Open CMD and navigate to directory
+3. One-off verify python 3.* installed (https://www.python.org/downloads/)
+4. One-off verify pandas installed ("pip3 install pandas")
+5. One-off verify xlrd installed ("pip3 install xlrd")
+6. Enter "python3 Notes_cleanser_v*.py"
+
+
+---------------------------------------------------
+Notes
+---------------------------------------------------
+- use of python3/pip3 or python/pip command is interchangable depending on your installation configuration
+- If your python version does not retrieve XLRD causing an error for pandas to read the Excel file, it can be installed using "pip3 install xlrd"
