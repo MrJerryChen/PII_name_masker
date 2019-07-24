@@ -11,7 +11,7 @@ colName = "Note"
 df = pd.read_excel(fileName,sheet_name=sheetName)
 firstNames = pd.read_csv("FirstNameDatabase.csv")
 lastNames = pd.read_csv("LastNameDatabase.csv")
-names = ["Apple","Apricot","Avocado","Banana","Berry","Cantaloupe","Cherry","Citron","Citrus","Coconut","Date","Fig","Grape","Guava","Kiwi","Lemon","Lime","Mango","Melon","Mulberry","Nectarine","Orange","Papaya","Peach","Pear","Pineapple","Plum","Prune","Raisin","Raspberry","Tangerine"]
+names = ["Apple","Apricot","Avocado","Banana","Blueberry","Berry","Cantaloupe","Cherry","Coconut","Date","Grape","Guava","Kiwi","Lemon","Lime","Mango","Melon","Nectarine","Orange","Papaya","Peach","Pear","Pineapple","Plum","Raisin","Raspberry","Strawberry","Tangerine"]
 
 # Iterate over each word in each row and match against databases
 for idx,row in df.iterrows():
@@ -25,4 +25,5 @@ for idx,row in df.iterrows():
     print(str(idx + 1) + " completed.")
 
 # Write dataframe to csv
-df.to_csv("output.csv",index=False)
+df.to_excel("output.xlsx",index=False)
+# ("output.csv",index=False)

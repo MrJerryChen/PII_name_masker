@@ -28,11 +28,10 @@ Instructions for Windows
 3. One-off verify python 3.* installed (https://www.python.org/downloads/)
 4. One-off verify pandas installed ("pip3 install pandas")
 5. One-off verify xlrd installed ("pip3 install xlrd")
-6. Enter "python3 Notes_cleanser_v*.py"
+6. Enter "python3 Notes_cleanser_v*.py [filename].xlsx"
 
 
 ---------------------------------------------------
 Notes
 ---------------------------------------------------
 - use of python3/pip3 or python/pip command is interchangable depending on your installation configuration
-- If your python version does not retrieve XLRD causing an error for pandas to read the Excel file, it can be installed using "pip3 install xlrd"
