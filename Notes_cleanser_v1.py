@@ -25,5 +25,5 @@ for idx,row in df.iterrows():
     print(str(idx + 1) + " completed.")
 
 # Write dataframe to csv
-df.to_excel("output.xlsx",index=False)
-# ("output.csv",index=False)
+#df.to_excel("output.xlsx",index=False)
+df.to_csv("output.csv",index=False)
