@@ -15,7 +15,7 @@ Version
 ---------------------------------------------------
 Description
 ---------------------------------------------------
-Script expects an excel file "Analysis_Latest_Test.xlsx" in same directory and a column named "Note" which holds the notes in Sheet1. 
+Script expects an excel file in same directory and a column named "Note" which holds the notes in Sheet1. 
 It outputs a "output.csv" file with a flattened version of the excel with matched first name, last names replaced with Joe, Bloggs 
 respectively in the Note column.
 
